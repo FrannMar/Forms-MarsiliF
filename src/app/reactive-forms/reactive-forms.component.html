@@ -1,0 +1,14 @@
+<p>Hola mundo</p>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()"><
+<!-- email Control -->
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input formControlName="email" type="email" class="form-control" id="exampleFormControlInput1">
+  </div>
+<!-- TextoEjemplo Control -->
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea formControlName="areaTexto" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button class="btn-btn-primary" type="submit">Enviar</button>
+</form>
